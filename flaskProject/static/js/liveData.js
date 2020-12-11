@@ -17,7 +17,7 @@ function prepare(names){
         })
     }).then(function(){
         live()
-        setInterval(updateCSV, 300*1000)
+        setInterval(updateCSV, 30*1000)
     }
 
     )
@@ -44,7 +44,7 @@ function live(){
         type: 'bar',
     },
     title: {
-        text: 'Server Monitoring Demo'
+        text: 'Live Tweets'
     },
     legend: {
         enabled: false
@@ -55,7 +55,7 @@ function live(){
     data: {
         googleSpreadsheetKey: '1g7eECgPd-06Ql6dsIYyp_lvUMXvnVW1f9ddOgKg_qIU',
         enablePolling: true,
-        dataRefreshRate: 20
+        dataRefreshRate: 30
     },
     plotOptions: {
         bar: {
